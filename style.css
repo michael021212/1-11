@@ -3,3 +3,329 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+ul {
+	list-style: none;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #ec715f
+}
+
+#humberger {
+	position: relative;
+	height: 40px;
+	width: 40px;
+	/*display: inline-block;*/
+	/*box-sizing: border-box;*/
+	border: 1px solid red;
+}
+
+#humberger div {
+	position: absolute;
+	left: 0;
+	height: 3px;
+	width: 30px;
+	background-color: red;
+	/*display: inline-block;*/
+	/*box-sizing: border-box;*/
+	margin: 0 auto;
+}
+
+#humberger div:nth-child(1) {
+	top: 25%;
+	left: 4px;
+}
+#humberger div:nth-child(2) {
+	bottom: 50%;
+	left: 4px;
+}
+#humberger div:nth-child(3) {
+	bottom: 25%;
+	left: 4px;
+}
+
+
+.nav-list a {
+	text-decoration: none;
+	color: white;
+}
+.header-bar {
+	width: 1024px;
+	margin: 0 auto;
+}
+.logo {
+	height: 70px;
+	float: left;
+}
+.nav {
+	float: right;
+}
+.nav-list {
+	width: 120px;
+	font-size: 16px;
+	float: left;
+	padding: 0 30px;
+	line-height: 70px;
+}
+
+.main-visual {
+	background-image: url(img/mv.png);
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	text-align: center;
+	color: #fafafa;
+}
+.main-visual-title {
+	padding-top: 200px;
+	font-size: 64px;
+}
+.main-visual-message {
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.portfolio {
+	width: 100%;
+	background-color: #eceff1;
+}
+.portfolio-contents {
+	width: 920px;
+	text-align: center;
+	margin: 0 auto;
+}
+.title {
+	font-size: 32px;
+	color: #000000;
+	padding-top: 90px;
+	padding-bottom: 8px;
+}
+.title-line {
+	height: 3px;
+	width: 70px;
+	background-color: #ec715f;
+	margin: 0 auto;
+}
+.message {
+	font-size: 16px;
+	color: #000000;
+	padding: 30px 0;
+}
+.portfolio-images {
+	padding-bottom: 90px;
+}
+.pi1 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/sketch.jpg);
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.pi2 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/websuku.png);
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.pi3 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/write.jpg);
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-bottom: 10px;
+}
+.pi4 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/webcamp.png);
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-right: 10px;
+}
+.pi5 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/talk.jpg);
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-right: 10px;
+}
+.pi6 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/webcamp-mother.png);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+
+.feature {
+	width: 100%;
+	color: #000000;
+}
+.feature-contents {
+	width: 980px;
+	text-align: center;
+	margin: 0 auto;
+}
+.feature-item {
+	width: 320px;
+	padding-top: 30px;
+	padding-bottom: 90px;
+	float: left;
+}
+.feature-item:nth-child(2) {
+	margin: 0 10px
+}
+.social {
+	width: 100%;
+}
+.feature .social i {
+	display: inline-block;
+	font-size: 60px;
+}
+.feature-item-title {
+	font-size: 20px;
+	padding: 10px 0;
+}
+.feature-item-message {
+	text-align: left;
+}
+
+.profile {
+	width: 100%;
+	color: #000000;
+	background-color: #eceff1;
+}
+.profile-contents {
+	width: 1024px;
+	text-align: center;
+	margin: 0 auto;
+}
+.introduce, .mail-tell-sns{
+	width: 100%;
+	padding-bottom: 90px;
+}
+.left {
+	width: 50%;
+	float: left;
+}
+.my-icon-image {
+	width: 250px;
+	height: 250px;
+	background-image: url(img/my-icon.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.right {
+	width: 50%;
+	float: left;
+}
+.profile .right {
+	text-align: left;
+}
+.left-h3 {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.left-p {
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.left-a {
+	display: inline-block;
+	padding-bottom: 20px;
+	color: #000000;
+}
+.left-p2 {
+	font-size: 16px;
+	padding-bottom: 0;
+}
+.left-a2 {
+	display: inline-block;
+	padding-bottom: 0;
+	color: #000000;
+}
+.contact .left {
+	text-align: left;
+}
+.contact {
+	width: 100%;
+	color: #000000;
+}
+.contact-contents {
+	width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+.mail-tell {
+	width: 130px;
+	margin: 0 auto;
+}
+.sns-icon {
+	width: 180px;
+	margin: 0 auto;
+	text-align: left;
+}
+.sns {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.contact .social i {
+	font-size: 50px;
+}
+.contact .social .fa-twitter {
+	margin: 0 20px;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: #ec715f;
+}
+.copyright {
+	font-size: 16px;
+	color: #fafafa;
+	line-height: 60px;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+header, .main-visual, .portfolio, .feature, .social, .profile, .contact, footer {
+	/*width: 90%;*/
+	/*margin: 0 auto;*/
+	/*padding: 0 5px;*/
+}
+.header-bar, .portfolio-contents, .feature-contents, .profile-contents, .contact-contents {
+	width: 90%;
+	padding: 0 5px;
+	margin: 0 auto;
+}
+.feature-item {
+	float: none;
+}
+header, .logo {
+	height: 50px;
+}
+}
