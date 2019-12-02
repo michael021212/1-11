@@ -17,37 +17,33 @@ header {
 	background-color: #ec715f
 }
 
-#humberger {
-	position: relative;
-	height: 40px;
+.navButton {
+	display: block;
+	text-decoration: none;
 	width: 40px;
-	/*display: inline-block;*/
-	/*box-sizing: border-box;*/
-	border: 1px solid red;
+	height: 40px;
+	position: relative;
+	float: right;
+	margin: 5px 5% -5px 0;
+	border: 1px solid white;
+	display: none;
 }
 
-#humberger div {
+.navButton div {
+	width: 60%;
+	height: 2px;
+	background-color: white;
 	position: absolute;
-	left: 0;
-	height: 3px;
-	width: 30px;
-	background-color: red;
-	/*display: inline-block;*/
-	/*box-sizing: border-box;*/
-	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-#humberger div:nth-child(1) {
-	top: 25%;
-	left: 4px;
+.navButton div:nth-of-type(1) {
+	transform: translate(-50%, -9px);
 }
-#humberger div:nth-child(2) {
-	bottom: 50%;
-	left: 4px;
-}
-#humberger div:nth-child(3) {
-	bottom: 25%;
-	left: 4px;
+.navButton div:nth-of-type(3) {
+	transform: translate(-50%, 7px);
 }
 
 
@@ -311,7 +307,7 @@ footer {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 header, .main-visual, .portfolio, .feature, .social, .profile, .contact, footer {
 	/*width: 90%;*/
 	/*margin: 0 auto;*/
@@ -327,5 +323,75 @@ header, .main-visual, .portfolio, .feature, .social, .profile, .contact, footer 
 }
 header, .logo {
 	height: 50px;
+}
+.nav {
+	display: none;
+}
+.navButton {
+	display: block;
+}
+.main-visual {
+	background-image: url(img/code.png);
+	background-size: cover;
+	background-position: center;
+	height: 650px;
+	text-align: center;
+	color: #fafafa;
+}
+.main-visual-title {
+	padding-top: 200px;
+	font-size: 40px	;
+}
+.main-visual-message {
+	padding-top: 10px;
+	font-size: 18px;
+}
+.pi1, .pi3, .pi5 {
+	display: none;
+	float: none;
+}
+.pi2, .pi4, .pi6 {
+	float: none;
+	margin: auto;
+}
+.pi4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.feature-item {
+	margin: 0 auto;
+}
+.feature-item:nth-child(2) {
+	margin: 0 auto;
+}
+.right, .left {
+	float: none;
+	margin: 0 auto;
+	width: 90%;
+}
+.my-icon-image {
+	margin: 0 auto;
+}
+.profile .right {
+	text-align: center;
+}
+.left-h3 {
+	padding-top: 20px;
+}
+.contact .left {
+	text-align: center;
+}
+.sns-icon {
+	text-align: center;
+	padding-top: 20px;
+}
+.left-a {
+	padding-bottom: 0;
+}
+.contact .social .fa-twitter {
+	margin: 0 8px;
+}
+.portfolio-images {
+	margin: 0 auto;
 }
 }
